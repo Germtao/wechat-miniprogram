@@ -9,4 +9,8 @@
   <button class="weui-btn weui-btn_primary weui-btn_disabled">
     禁止点击
   </button>
+  <image 
+    src="https://picsum.photos/200" 
+    style="height: 375rpx; width: 375rpx;"
+  ></image>
 </View>
