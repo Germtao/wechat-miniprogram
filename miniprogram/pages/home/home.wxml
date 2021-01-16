@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
 <View>
+  <text class="title">hello {{name}}</text>
   <button class="weui-btn weui-btn_primary">
     主操作
   </button>
