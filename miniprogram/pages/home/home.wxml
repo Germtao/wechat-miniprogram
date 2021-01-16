@@ -1,6 +1,9 @@
 <!--pages/home/home.wxml-->
 <View>
   <text class="title">hello {{name}} \n 现在是 {{now}}</text>
+
+  <button bindtap="buttonHandler">点击</button>
+
   <!-- <button class="weui-btn weui-btn_primary">
     主操作
   </button>
