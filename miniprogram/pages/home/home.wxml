@@ -1,0 +1,5 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<View>
+  <text class="title">hello world</text>
+</View>

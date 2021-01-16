@@ -1,0 +1,9 @@
+/**app.wxss 样式文件**/
+page {
+  background-color: pink;
+}
+
+.title {
+  font-size: 24pt;
+  color: blue;  
+}
