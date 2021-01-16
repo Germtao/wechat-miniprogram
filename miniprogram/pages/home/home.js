@@ -8,7 +8,8 @@ Page({
    */
   data: {
     name: '张三',
-    now: app.globalData.now
+    now: app.globalData.now,
+    items: ['事项 A', '事项 B', '事项 C']
   },
   // buttonHandler: function(event) {
   buttonHandler(event) {
