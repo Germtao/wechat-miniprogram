@@ -12,14 +12,36 @@ Page({
   },
   // buttonHandler: function(event) {
   buttonHandler(event) {
-    console.log(event);
-    this.setData({
-      name: '李四'
-    }, function () {
-      wx.showToast({
-        title: '操作完成',
-        duration: 700,
-      })
+    // console.log(event);
+    // this.setData({
+    //   name: '李四'
+    // }, function () {
+    //   wx.showToast({
+    //     title: '操作完成',
+    //     duration: 700,
+    //   })
+    // });
+    const that = this;
+    wx.showModal({
+      title: '操作确认',
+      content: '你确定要修改吗？',
+      success: (res) => {
+        if (res.confirm) {
+          that.setData({
+            name: '李四'
+          }, function () {
+            wx.showToast({
+              title: '操作完成',
+              duration: 700,
+            });
+          });
+        } else if(res.cancel) {
+          wx.showToast({
+            title: '取消操作',
+            duration: 700,
+          });
+        }
+      }
     });
   },
 
