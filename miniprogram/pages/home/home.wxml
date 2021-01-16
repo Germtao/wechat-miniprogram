@@ -1,12 +1,16 @@
 <!--pages/home/home.wxml-->
-<View>
-  <text class="title">hello {{name}} \n 现在是 {{now}}</text>
+<view>
+  <!-- <text class="title">hello {{name}} \n 现在是 {{now}}</text>
 
-  <button bindtap="buttonHandler">点击</button>
+  <button bindtap="buttonHandler">点击</button> -->
 
   <text class="title" wx:for="{{items}}">
     {{index}}、{{item}}
   </text>
+
+  <input placeholder="输入新增事项" bindinput="inputHandler"/>
+
+  <button bindtap="sureHandler">确定</button>
 
   <!-- <button class="weui-btn weui-btn_primary">
     主操作
@@ -32,4 +36,4 @@
       <image src="https://picsum.photos/300"></image>
     </swiper-item>
   </swiper> -->
-</View>
+</view>

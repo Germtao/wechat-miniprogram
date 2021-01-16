@@ -9,7 +9,8 @@ Page({
   data: {
     name: '张三',
     now: app.globalData.now,
-    items: ['事项 A', '事项 B', '事项 C']
+    items: [],
+    inputValue: ''
   },
   // buttonHandler: function(event) {
   buttonHandler(event) {
@@ -45,12 +46,27 @@ Page({
       }
     });
   },
+  inputHandler(event) {
+    this.setData({
+      inputValue: event.detail.value || ''
+    });
+  },
+  sureHandler(event) {
+    const newItem = this.data.inputValue.trim();
+    if (!newItem) {
+      return;
+    }
+    const itemArr = [...this.data.items, newItem];
+    wx.setStorageSync('items', itemArr);
+    this.setData({ items: itemArr });
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const itemArr = wx.getStorageSync('items') || [];
+    this.setData({ items: itemArr });
   },
 
   /**
