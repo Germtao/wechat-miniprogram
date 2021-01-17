@@ -12,6 +12,9 @@
 
   <button bindtap="sureHandler">确定</button>
 
+  <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userNickName"></open-data>
+
   <!-- <button class="weui-btn weui-btn_primary">
     主操作
   </button>
