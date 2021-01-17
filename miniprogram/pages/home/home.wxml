@@ -12,8 +12,14 @@
 
   <button bindtap="sureHandler">确定</button>
 
-  <open-data type="userAvatarUrl"></open-data>
-  <open-data type="userNickName"></open-data>
+  <!-- 不推荐使用，必须要授权 -->
+  <!-- <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userNickName"></open-data> -->
+
+  <text class="title">hello {{userName}}</text>
+  <button open-type="getUserInfo" bindgetuserinfo="getUserInfoHandler">
+    授权获取用户个人信息
+  </button>
 
   <!-- <button class="weui-btn weui-btn_primary">
     主操作

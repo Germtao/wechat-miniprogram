@@ -11,6 +11,7 @@ Page({
     // now: app.globalData.now,
     items: [],
     // inputValue: ''
+    userName: ''
   },
   // buttonHandler: function(event) {
   buttonHandler(event) {
@@ -59,6 +60,13 @@ Page({
     const itemArr = [...this.data.items, newItem];
     wx.setStorageSync('items', itemArr);
     this.setData({ items: itemArr });
+  },
+  getUserInfoHandler(event) {
+    if (!event.detail.userInfo) return;
+
+    this.setData({
+      userName: event.detail.userInfo.nickName
+    });
   },
 
   /**
