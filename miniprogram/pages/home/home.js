@@ -7,10 +7,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    name: '张三',
-    now: app.globalData.now,
+    // name: '张三',
+    // now: app.globalData.now,
     items: [],
-    inputValue: ''
+    // inputValue: ''
   },
   // buttonHandler: function(event) {
   buttonHandler(event) {
@@ -65,8 +65,16 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    const itemArr = wx.getStorageSync('items') || [];
-    this.setData({ items: itemArr });
+    // const itemArr = wx.getStorageSync('items') || [];
+    // this.setData({ items: itemArr });
+
+    const that = this;
+    wx.request({
+      url: 'http://localhost:3000/items',
+      success(res) {
+        that.setData({ items: res.data });
+      }
+    });
   },
 
   /**
