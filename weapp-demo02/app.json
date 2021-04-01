@@ -6,6 +6,8 @@
     "pages/component/component-pages/wx-scroll-view/wx-scroll-view",
     "pages/component/component-pages/wx-swiper/wx-swiper",
 
+    "pages/component/component-pages/wx-text/wx-text",
+
     "pages/API/index/index"
   ],
   "window": {

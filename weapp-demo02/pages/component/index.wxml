@@ -34,6 +34,12 @@
           <text class="widgets__info-name">内容</text>
           <image class="widgets__info-img" src="resources/kind/content.png"></image>
         </view>
+        <view id="content" class="widgets__list {{contentShow ? 'widgets__list_show' : ''}}">
+          <navigator url="component-pages/wx-text/wx-text" class="widget">
+            <text class="widget__name">text</text>
+            <image class="widget__arrow" src="resources/arrow.png"></image>
+          </navigator>
+        </view>
       </view>
 
       <view class="widgets__item">
