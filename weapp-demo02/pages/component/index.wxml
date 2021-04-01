@@ -9,16 +9,45 @@
       <view class="widgets__item">
         <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
           <text class="widgets__info-name">内容分区</text>
-          <image class="widget__info-img" src="resources/kind/view.png" background-size="cover"/>
-        </view>
-        <view class="widgets__list {{viewShow ? 'widgets__list-show' : ''}}">
-          <navigator url="component-pages/wx-view/wx-view" class="widget">
-            <text class="widget__name">view</text>
-            <image class="widget__arrow" src="resources/arrow.png" background-size="cover"></image>
-            <view class="widget__line"></view>
-          </navigator>
+          <image class="widgets__info-img" src="resources/kind/view.png"/>
         </view>
       </view>
+
+      <view class="widgets__item">
+        <view id="content" class="widgets__info {{contentShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">内容</text>
+          <image class="widgets__info-img" src="resources/kind/content.png"></image>
+        </view>
+      </view>
+
+      <view class="widgets__item">
+        <view id="form" class="widgets__info {{formShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">表单组件</text>
+          <image class="widgets__info-img" src="resources/kind/form.png"></image>
+        </view>
+      </view>
+
+      <view class="widgets__item">
+        <view id="interact" class="widgets__info {{interactShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">交互组件</text>
+          <image class="widgets__info-img" src="resources/kind/interact.png"></image>
+        </view>
+      </view>
+
+      <view class="widgets__item">
+        <view id="nav" class="widgets__info {{navShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">导航</text>
+          <image class="widgets__info-img" src="resources/kind/nav.png"></image>
+        </view>
+      </view>
+
+      <view class="widgets__item">
+        <view id="media" class="widgets__info {{mediaShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+          <text class="widgets__info-name">媒体</text>
+          <image class="widgets__info-img" src="resources/kind/media.png"></image>
+        </view>
+      </view>
+
     </view>
   </view>
 </view>
