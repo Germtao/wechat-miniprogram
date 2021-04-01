@@ -1,16 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/component/index",
     "pages/component/navigation-pages/view/view",
     "pages/component/component-pages/wx-view/wx-view",
     "pages/component/component-pages/wx-scroll-view/wx-scroll-view",
+    "pages/component/component-pages/wx-swiper/wx-swiper",
 
-    "pages/API/index/index"    
+    "pages/API/index/index"
   ],
-  "window":{
+  "window": {
     "navigationBarBackgroundColor": "#fbf9fe",
     "navigationBarTitleText": "小程序演示",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "backgroundColor": "#fbf9fe"
   },
   "tabBar": {
@@ -18,17 +19,21 @@
     "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
-    "list": [{
-      "pagePath": "pages/component/index",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
-      "text": "组件"
-    }, {
-      "pagePath": "pages/API/index/index",
-      "iconPath": "image/wechat.png",
-      "selectedIconPath": "image/wechatHL.png",
-      "text": "接口"
-    }]
+    "list": [
+      {
+        "pagePath": "pages/component/index",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/API/index/index",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "接口"
+      }
+    ]
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap25.json"
 }

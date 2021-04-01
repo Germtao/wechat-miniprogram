@@ -1,0 +1,5 @@
+/** wx-swiper.wxss **/
+.swiper-item {
+  display: block;
+  height: 150px;
+}
