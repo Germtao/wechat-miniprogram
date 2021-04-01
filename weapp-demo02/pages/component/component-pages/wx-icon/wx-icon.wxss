@@ -1,0 +1,5 @@
+/** wx-icon.wxss **/
+.group {
+  flex-direction: row;
+  align-items: center;
+}
