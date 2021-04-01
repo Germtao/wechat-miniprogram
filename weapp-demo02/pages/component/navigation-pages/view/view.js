@@ -1,9 +1,9 @@
 var components = [
-  'view'
-]
+  'progress', 'toast', 'scroll-view', 'text', 'view', 'mask', 'icon', 'spinner', 'swiper', 'slide-tab'
+];
 
 var pageData = {}
-for (var i = 0; i < array.length; ++i) {
+for (var i = 0; i < components.length; ++i) {
   (function (index) {
     pageData[components[index]] = function (e) {
       var url = '../../component-pages/wx-' + components[index] + 'wx-' + components[index]

@@ -11,6 +11,13 @@
           <text class="widgets__info-name">内容分区</text>
           <image class="widgets__info-img" src="resources/kind/view.png"/>
         </view>
+        <view class="widgets__list {{viewShow ? 'widgets__list_show' : ''}}">
+          <navigator url="component-pages/wx-view/wx-view" class="widget">
+            <text class="widget__name">view</text>
+            <image class="widget__arrow" src="resources/arrow.png"></image>
+            <view class="widget__line"></view>
+          </navigator>
+        </view>
       </view>
 
       <view class="widgets__item">
