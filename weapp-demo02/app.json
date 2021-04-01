@@ -1,14 +1,33 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/component/index",
+    "pages/component/navigation-pages/view/view",
+    "pages/component/component-pages/wx-view/wx-view",
+
+    "pages/API/index/index"    
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "navigationBarTitleText": "小程序演示",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#fbf9fe"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/component/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "组件"
+    }, {
+      "pagePath": "pages/API/index/index",
+      "iconPath": "image/wechat.png",
+      "selectedIconPath": "image/wechatHL.png",
+      "text": "接口"
+    }]
+  },
+  "debug": true
 }

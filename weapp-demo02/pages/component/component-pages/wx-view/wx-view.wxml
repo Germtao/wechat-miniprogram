@@ -78,8 +78,8 @@
     </view>
 
     <view class="section">
-      <view class="section__title">align-items: flex-end</view>
-      <view class="flex-wrp" style="height: 200px; flex-direction: row; justify-content: center; align-items: flex-end;">
+      <view class="section__title">align-items: center</view>
+      <view class="flex-wrp" style="height: 200px; flex-direction: row; justify-content: center; align-items: center;">
         <view class="flex-item bc_green"></view>
         <view class="flex-item bc_red"></view>
         <view class="flex-item bc_blue"></view>
