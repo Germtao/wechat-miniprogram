@@ -3,6 +3,7 @@
     "pages/component/index",
     "pages/component/navigation-pages/view/view",
     "pages/component/component-pages/wx-view/wx-view",
+    "pages/component/component-pages/wx-scroll-view/wx-scroll-view",
 
     "pages/API/index/index"    
   ],
