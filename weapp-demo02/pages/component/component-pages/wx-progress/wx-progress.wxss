@@ -1,0 +1,4 @@
+/** wx-progress.wxss **/
+progress {
+  margin-bottom: 30px;
+}

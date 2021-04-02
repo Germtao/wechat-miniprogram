@@ -10,6 +10,7 @@
     "pages/component/component-pages/wx-icon/wx-icon",
     "pages/component/component-pages/wx-mask/wx-mask",
     "pages/component/component-pages/wx-toast/wx-toast",
+    "pages/component/component-pages/wx-progress/wx-progress",
 
     "pages/API/index/index"
   ],
