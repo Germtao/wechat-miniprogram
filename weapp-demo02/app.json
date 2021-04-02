@@ -12,6 +12,8 @@
     "pages/component/component-pages/wx-toast/wx-toast",
     "pages/component/component-pages/wx-progress/wx-progress",
 
+    "pages/component/component-pages/form-widgets/wx-button/wx-button",
+
     "pages/API/index/index"
   ],
   "window": {
