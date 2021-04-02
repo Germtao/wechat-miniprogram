@@ -13,6 +13,7 @@
     "pages/component/component-pages/wx-progress/wx-progress",
 
     "pages/component/component-pages/form-widgets/wx-button/wx-button",
+    "pages/component/component-pages/form-widgets/wx-checkbox/wx-checkbox",
 
     "pages/API/index/index"
   ],
