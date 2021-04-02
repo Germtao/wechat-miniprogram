@@ -14,6 +14,7 @@
 
     "pages/component/component-pages/form-widgets/wx-button/wx-button",
     "pages/component/component-pages/form-widgets/wx-checkbox/wx-checkbox",
+    "pages/component/component-pages/form-widgets/wx-form/wx-form",
 
     "pages/API/index/index"
   ],
